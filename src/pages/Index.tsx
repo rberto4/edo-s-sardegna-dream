@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { DonationCard } from "@/components/DonationCard";
 import { ProgressBar } from "@/components/ProgressBar";
-import { AnecdoteCard } from "@/components/AnecdoteCard";
+
 import edoardoHero from "@/assets/edoardo-hero.jpg";
 import friendsGroup from "@/assets/friends-group.jpg";
 import boatIcon from "@/assets/boat-icon.jpg";
@@ -17,23 +17,6 @@ const Index = () => {
     setTotalRaised(prev => prev + amount);
   };
 
-  const anecdotes = [
-    {
-      title: "Er problema der noleggio",
-      emoji: "😤",
-      content: "L'anno scorso ar noleggiatore, Edoardo fa le manovre tutto orgoglioso... E quello: 'Benino, benino...' Ma che benino! Mo' con er gommone suo sarà lui a dire 'BENISSIMO' a tutti quanti!"
-    },
-    {
-      title: "Er drogato con la moto d'acqua",
-      emoji: "🤯",
-      content: "Alla Maddalena c'era 'sto tipo completamente fuori che correva come un pazzo con la moto d'acqua. Edoardo: 'Ma quello che cazzo fa?' Praticamente era er motivo principale per cui serve er gommone: per scappare da 'sti matti!"
-    },
-    {
-      title: "La frase leggendaria",
-      emoji: "👑",
-      content: "'Ajo fanelli, sto da dio qua fanelli!' - Questa è la frase che dice Edoardo ogni volta che sale su una barca. Con er suo gommone la dirà ogni santo giorno dell'estate 2026!"
-    }
-  ];
 
   return (
     <div className="min-h-screen bg-background">
@@ -70,12 +53,13 @@ const Index = () => {
               <CardContent className="p-6">
                 <h2 className="text-2xl font-bold mb-3">Ecco er nostro eroe: Edoardo! 🏆</h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  Ogni estate è la stessa storia: "Raga, prendiamo er gommone a noleggio?" 
-                  E poi iniziano i drammi: "Ma quanto costa?", "Ma chi lo guida?", "Ma se lo rompiamo?"
+                  La storia che ha cambiato tutto: durante uno degli ultimi noleggi, Edoardo ha voluto fare 
+                  la manovra di uscita dal porto. Il noleggiatore, scettico, ha commentato che l'ha fatta 
+                  <strong>"benino"</strong>... facendo imbufalire Edoardo!
                   <br /><br />
-                  <strong>BASTA!</strong> È arrivato er momento che Edoardo abbia er SUR gommone. 
+                  <strong>MAI PIÙ "BENINO"!</strong> È arrivato il momento che Edoardo abbia er SUO gommone. 
                   Così potrà portare Eleonora, Riccardo e Roberto in giro per la Sardegna 
-                  senza più sentirse dire "benino" da nessuno!
+                  dimostrando a tutti che le sue manovre sono PERFETTE!
                 </p>
               </CardContent>
             </Card>
@@ -98,21 +82,31 @@ const Index = () => {
                   <Badge variant="outline" className="justify-center py-2">🏊‍♂️ Roberto</Badge>
                 </div>
                 <p className="text-muted-foreground mt-4">
-                  Questi so' i fantastici quattro che se ne andranno in giro per la Sardegna 
-                  senza più rompere le scatole a nessuno per er noleggio!
+                  Questi sono i fantastici quattro che se ne andranno in giro per la Sardegna 
+                  senza più dover noleggiare nulla e soprattutto senza sentirsi dire "benino"!
                 </p>
               </CardContent>
             </Card>
 
-            {/* Anecdotes */}
-            <div className="space-y-6">
-              <h2 className="text-3xl font-bold text-center">Le storie leggendarie 📚</h2>
-              <div className="grid gap-6">
-                {anecdotes.map((anecdote, index) => (
-                  <AnecdoteCard key={index} {...anecdote} />
-                ))}
-              </div>
-            </div>
+            {/* Mission Statement */}
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-2xl text-center">La Missione 🎯</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="text-center space-y-4">
+                  <div className="text-6xl mb-4">🚤</div>
+                  <h3 className="text-xl font-bold text-primary">
+                    "Non più 'BENINO' - Solo PERFETTO!"
+                  </h3>
+                  <p className="text-muted-foreground">
+                    Edoardo merita di avere er suo gommone per dimostrare al mondo 
+                    che le sue manovre sono impeccabili. Niente più noleggi, 
+                    niente più giudizi, solo libertà totale nelle acque della Sardegna!
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
           </div>
 
           {/* Right Column - Donation & Progress */}
@@ -187,10 +181,10 @@ const Index = () => {
       <footer className="gradient-sunset py-12 mt-16">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">
-            "Ajo fanelli, sto da dio qua fanelli!"
+            "Non più 'BENINO' - Solo perfetto!"
           </h2>
           <p className="text-white/90 text-lg mb-6">
-            Aiuta Edoardo a realizzare er sogno e a portare la crew in Sardegna con stile!
+            Aiuta Edoardo a realizzare il sogno e a portare la crew in Sardegna con stile!
           </p>
           <Button 
             size="lg" 

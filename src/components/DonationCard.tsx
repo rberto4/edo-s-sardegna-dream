@@ -14,18 +14,18 @@ export const DonationCard = ({ onDonate }: DonationCardProps) => {
 
   const presetAmounts = [5, 10, 25, 50, 100, 200];
 
-  const romanescoMessages = {
-    5: "Ajo, già che fai qualcosa! Minimo sindacale ma amo te stesso!",
-    10: "Bello sto caffè, mo' te considero amico de famiglia!",
-    25: "Ajò che c'hai er core grande! Sei un santo!",
-    50: "Ma quanto sei bonaccione! Edoardo te benedice!",
-    100: "MADONNA SANTA! Sei proprio er migliore, che cuore!",
-    200: "MA CHE FAI?! Sei impazzito? Ti amo come fosse me fratello!"
+  const donationMessages = {
+    5: "Grazie! Ogni piccolo contributo conta per er gommone!",
+    10: "Ottimo! Stiamo costruendo il sogno mattone per mattone!",
+    25: "Fantastico! Edoardo ti ringrazia di cuore!",
+    50: "Incredibile! Il gommone si avvicina sempre di più!",
+    100: "WOW! Sei fantastico, grazie mille!",
+    200: "STRAORDINARIO! Sei un vero amico!"
   };
 
   const handleDonate = (amount: number) => {
-    const message = romanescoMessages[amount as keyof typeof romanescoMessages] || 
-      (amount > 200 ? "MA CHE HAI VINTO AR LOTTO?! Sei er Messia!" : "Grazie de core, sei grande!");
+    const message = donationMessages[amount as keyof typeof donationMessages] || 
+      (amount > 200 ? "INCREDIBILE! Hai vinto alla lotteria?! Grazie!" : "Grazie di cuore, sei fantastico!");
     
     toast({
       title: "Donazione ricevuta! 🚤",
@@ -40,8 +40,8 @@ export const DonationCard = ({ onDonate }: DonationCardProps) => {
     const amount = parseFloat(customAmount);
     if (isNaN(amount) || amount <= 0) {
       toast({
-        title: "Ajo, che fai?",
-        description: "Metti un importo valido, altrimenti Edoardo rimane a terra!",
+        title: "Attenzione!",
+        description: "Inserisci un importo valido per aiutare Edoardo!",
         variant: "destructive"
       });
       return;
@@ -58,7 +58,7 @@ export const DonationCard = ({ onDonate }: DonationCardProps) => {
           🚤 Aiuta Edoardo a comprare er gommone! 🚤
         </CardTitle>
         <p className="text-white/90 text-center">
-          "Ajo fanelli, sto da dio qua fanelli" - ma serve er gommone!
+          "Non più 'benino'! Con er gommone suo, le manovre saranno perfette!"
         </p>
       </CardHeader>
       <CardContent className="space-y-6">
