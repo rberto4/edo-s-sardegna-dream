@@ -61,7 +61,13 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Mediterranean theme
+				ocean: 'hsl(var(--ocean-blue))',
+				turquoise: 'hsl(var(--turquoise))',
+				sand: 'hsl(var(--sand))',
+				coral: 'hsl(var(--coral))',
+				deepBlue: 'hsl(var(--deep-blue))'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
