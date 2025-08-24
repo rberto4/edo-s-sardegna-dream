@@ -31,7 +31,7 @@ const Index = () => {
             <img src={boatIcon} alt="Boat Icon" className="w-16 h-16 float" />
           </div>
           <p className="text-xl text-white/90 max-w-2xl mx-auto">
-            Una raccolta fondi seria per un problema serio: Edoardo deve avere er suo gommone!
+            Una raccolta fondi seria per un problema serio: Edoardo deve avere il suo gommone! Ma con lo stipendio da PhD, è già buono se riesce a mangiare ogni tanto...
           </p>
           <Badge variant="secondary" className="mt-4 text-lg px-4 py-2">
             🎯 Obiettivo: Estate 2026 in Sardegna
@@ -51,13 +51,13 @@ const Index = () => {
                 className="w-full h-96 object-cover"
               />
               <CardContent className="p-6">
-                <h2 className="text-2xl font-bold mb-3">Ecco er nostro eroe: Edoardo! 🏆</h2>
+                <h2 className="text-2xl font-bold mb-3">Ecco il nostro eroe: Edoardo! 🏆</h2>
                 <p className="text-muted-foreground leading-relaxed">
                   La storia che ha cambiato tutto: durante uno degli ultimi noleggi, Edoardo ha voluto fare 
                   la manovra di uscita dal porto. Il noleggiatore, scettico, ha commentato che l'ha fatta 
                   <strong>"benino"</strong>... facendo imbufalire Edoardo!
                   <br /><br />
-                  <strong>MAI PIÙ "BENINO"!</strong> È arrivato il momento che Edoardo abbia er SUO gommone. 
+                  <strong>MAI PIÙ "BENINO"!</strong> È arrivato il momento che Edoardo abbia il SUO gommone. 
                   Così potrà portare Eleonora, Riccardo e Roberto in giro per la Sardegna 
                   dimostrando a tutti che le sue manovre sono PERFETTE!
                 </p>
@@ -100,7 +100,7 @@ const Index = () => {
                     "Non più 'BENINO' - Solo PERFETTO!"
                   </h3>
                   <p className="text-muted-foreground">
-                    Edoardo merita di avere er suo gommone per dimostrare al mondo 
+                    Edoardo merita di avere il suo gommone per dimostrare al mondo 
                     che le sue manovre sono impeccabili. Niente più noleggi, 
                     niente più giudizi, solo libertà totale nelle acque della Sardegna!
                   </p>
@@ -124,19 +124,20 @@ const Index = () => {
                 <div className="space-y-3">
                   <div className="flex justify-between items-center p-3 bg-muted rounded-lg">
                     <span className="font-medium">€5-10</span>
-                    <span className="text-sm">Un grazie de core + foto della barca</span>
+                    <span className="text-sm">Un grazie + Bicchiere di vino offerto da Riccardo </span>
                   </div>
                   <div className="flex justify-between items-center p-3 bg-secondary rounded-lg">
                     <span className="font-medium">€25-50</span>
-                    <span className="text-sm">Video personalizzato da Edoardo in barca</span>
+                    <span className="text-sm">Video da Edoardo al timone + Assunzione nella ONG come scafista</span>
                   </div>
                   <div className="flex justify-between items-center p-3 bg-accent/20 rounded-lg">
                     <span className="font-medium">€100+</span>
-                    <span className="text-sm">Invito per un giro in barca in Sardegna!</span>
+                    <span className="text-sm">Invito per un giro in barca in Sardegna, con Edoardo felice di fare le manovre,</span>
                   </div>
                   <div className="flex justify-between items-center p-3 bg-primary/20 rounded-lg">
                     <span className="font-medium">€500+</span>
-                    <span className="text-sm">Co-proprietario onorario der gommone!</span>
+                    <span className="text-sm">Co-proprietario onorario del gommone!
+                      (ma senza diritto di fare le manovre, quelle sono di Edoardo.)</span>
                   </div>
                 </div>
               </CardContent>
@@ -153,7 +154,7 @@ const Index = () => {
                     <div className="w-4 h-4 bg-primary rounded-full shrink-0"></div>
                     <div>
                       <div className="font-medium">Inverno 2024-2025</div>
-                      <div className="text-sm text-muted-foreground">Raccolta fondi e ricerca der gommone perfetto</div>
+                      <div className="text-sm text-muted-foreground">Raccolta fondi e ricerca del gommone perfetto</div>
                     </div>
                   </div>
                   <div className="flex items-center gap-3">
@@ -181,16 +182,16 @@ const Index = () => {
       <footer className="gradient-sunset py-12 mt-16">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">
-            "Non più 'BENINO' - Solo perfetto!"
+            "Ajo Fanelli, sto da dio qui Fanelli"
           </h2>
           <p className="text-white/90 text-lg mb-6">
-            Aiuta Edoardo a realizzare il sogno e a portare la crew in Sardegna con stile!
+            Aiuta Edoardo a realizzare il sogno e a portare la crew (sopprattuto Eleonora) in Sardegna con stile!
           </p>
           <Button 
             size="lg" 
             className="bg-white text-primary hover:bg-white/90 font-bold text-xl px-8 py-4"
           >
-            💙 Dona ora per er gommone! 💙
+            💙 Dona ora per il gommone! 💙
           </Button>
         </div>
       </footer>
